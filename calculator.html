@@ -11,17 +11,19 @@
     <div id="calculator">
 
       <form>
-        <p>Select your currency</p>
-        <select name="money" id="currency">
-          <option disabled selected value="0"> --Select Currency-- </option>
+        <!--<p>Select your currency</p>
+
+        
+        <select id="currency">
+          <option disabled selected value="none">--Select Currency--</option>
           <option value="shilling">Kenya Shilling</option>
           <option value="dollar"> US Dollar</option>
           <option value="pound">Sterling Pound</option>
           <option value="euro">Euro</option>
-        </select>
+        </select>-->
 
         <p>How much was your bill?</p>
-        <span id="currency"></span><input id="billamt" type="text" placeholder="Enter Amount">
+        $<input id="billamt" type="text" placeholder="Enter Amount">
 
         <p>How was your service?</p>
         <select id="servicequal">
@@ -39,6 +41,16 @@
         <input id="peopleamt" type="text" placeholder="Number of people">
         <button type="button" id="calculate">Calculate!</button>
     </div>
+    <!--calculator end-->
+    <div id="totalTip">
+      <sup></sup><span id="tip">0.00</span>
+      <small id="each">each</small>
+    </div>
+    <!--totalTip end-->
+
   </div>
+  <!--container end-->
+
+  <script src="/calculator.js"></script>
 </body>
 </html>
